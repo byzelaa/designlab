@@ -1,4 +1,6 @@
-@import url('insert ivypresto display link');
+a{
+    text-decoration: none;
+}
 
 .nav{
 position: fixed;
@@ -9,31 +11,26 @@ top: 0px;
 }
 
 .logo{
+text-decoration: none;
 position: absolute;
 width: 312px;
 height: 73px;
 left: 60px;
 top: 117px;
 
-font-family: IvyPresto Display;
+font-family: ivypresto-display, serif;
 font-style: normal;
-font-weight: normal;
+font-weight: 600;
 font-size: 60px;
 line-height: 77px;
 
 color: #000000;
-text-decoration: none;
 }
 
 
 .logo a:visited {
     color: #000000;
     text-decoration: none;
-    }
-
-.logo a:hover {
-   color: #89E441;
-   text-decoration: none;
     }
     
 
