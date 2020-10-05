@@ -176,7 +176,7 @@ color: #000000;
         margin-left: 400px;
         top: 100px;
         font-size: 28px;
-        padding: 0px 0px;
+        padding: 100px 0px;
         }
 
 .container {
@@ -184,3 +184,49 @@ color: #000000;
             text-align: center;
             color: white;
           }
+
+.missionstatement{
+position: absolute;
+width: 735px;
+height: 97px;
+left: 540px;
+top: 558px;
+
+font-family: Jost;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+
+}
+
+.missionstatementunderline{
+position: absolute;
+width: 875px;
+height: 0px;
+left: 469px;
+top: 727px;
+
+border: 1px solid #000000;
+}
+
+.footer{
+position: absolute;
+width: 1440px;
+height: 34px;
+left: 0px;
+top: 837px;
+
+font-family: ivypresto-display, serif;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #748D65;
+}
