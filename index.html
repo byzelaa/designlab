@@ -6,9 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>designlab</title>
     <link rel='stylesheet' href="stylesheet.css" />
-   <script src="javaescript.js"></script>
+   <script src="javascript.js"></script>
 </head>
 <body>
+    
+    <form>
+        <h1>contact us</h1>      
+        <input name="name" type="text" class="feedback-input" placeholder="name" />   
+        <input name="email" type="text" class="feedback-input" placeholder="email" />
+        <input name="phone" type="text" class="feedback-input" placeholder="phone" />
+        <select name="designer" class="feedback-input" placeholder="designer">
+            <option value="designer">designer</option>
+            <option value="tom">tom</option>
+            <option value="milan">milan</option>
+            <option value="lucy">lucy</option>
+            <option value="yui">yui</option>
+            <option value="rielle">rielle</option>
+        </select>
+        <textarea name="text" class="feedback-input" placeholder="message"></textarea>
+
+        <div>
+            <p>
+              <label class="btn" for="modal-1">send</label>
+            </p>
+        </div> 
+          
+        <input class="modal-state" id="modal-1" type="checkbox" />
+        <div class="modal">
+            <label class="modal__bg" for="modal-1"></label>
+            <div class="modal__inner">
+                <label class="modal__close" for="modal-1"></label>
+                <h2>THANK YOU FOR <br>SUBMITTING!</h2>
+                <p>
+                    <input type="submit" value="CLICK HERE TO RETURN"/>
+                </p>
+            </div>
+        </div>
+      </form>
 
 
 </body>
