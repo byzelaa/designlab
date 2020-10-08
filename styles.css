@@ -263,8 +263,7 @@ a {
     .footer {
         font-size: 20px;
         line-height: 26px;
-        text-align: left;
-        margin-left: 10%;
+        text-align: center;
     }
 
     .footer p {
