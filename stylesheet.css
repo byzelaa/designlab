@@ -2,18 +2,18 @@
 @import url("https://use.typekit.net/zcs7ceo.css");
 
 body { background:rgb(255, 255, 255)55, 255); }
-form { max-width:476px; margin:50px auto; }
+form { max-width:576px; margin:50px auto; }
 
 h1 {
-    font-family: ivypresto-headline, serif;
+    font-family:'Jost', sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 26px;
     font-style: normal;
     text-align: left;
 }
 
 h2 {
-    font-family: 'IvyPresto Display';
+    font-family: 'IvyPresto-Display', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
@@ -26,7 +26,7 @@ h2 {
     color:black;
     font-family:'Jost', sans-serif;
     font-weight:500;
-    font-size: 18px;
+    font-size: 26px;
     border-radius: 5px;
     line-height: 22px;
     background-color: transparent;
@@ -160,18 +160,18 @@ textarea {
   body {
     padding: 1%;
     font-family:'Jost', sans-serif;
+    font-size: 15px;
     text-align: center;
   }
   
   .btn {
     cursor: pointer;
     background: #303030;
-    padding: .5em 3em;
+    padding: .3em 2em;
     color: #fff;
     border-radius: 3px;
     transition: all 0.3s;
-    margin-right: 100%;
-
+    margin-left: 70%;
   }
   
   .btn:hover,
@@ -196,3 +196,76 @@ textarea {
   .btn--blue:active {
     background: #2980b9;
   }
+
+    /* contact 02
+   * =============================== */
+
+  .boxhub-form__field:focus,
+.boxhub-form__field::moz-inner-focus,
+.boxhub-form__field:active {
+  border: none;
+  outline: none;
+}
+
+.boxhub-form {
+  box-shadow: 0 0 20px #fafafa;
+  color: #000000;
+  height: 300px;
+  margin: 10% auto;
+  padding: 50px;
+  line-height: 2;
+  text-align: left;
+  font-size: 26px;;
+}
+
+.boxhub-form__input {
+  position: relative;
+}
+
+.boxhub-form__field {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  color: #000000;
+  width: 320px;
+}
+
+.boxhub-form__field:focus ~ .boxhub-form__border {
+  transition: 0.4s;
+  width: 100%;
+}
+
+.boxhub-form__border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #748D65;
+  transition: 0.4s;
+}
+
+.boxhub-form__select {
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.boxhub-form__submit {
+  background-color: #748D65;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 20px auto;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.boxhub-form__submit:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
