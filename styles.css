@@ -271,3 +271,395 @@ a {
         padding: 10px 40px;
     }
 }
+
+/* Work Page */
+
+#container {
+    display: block;
+    margin-top: 9vw;
+}
+
+/* Filter Buttons */
+
+.filter {
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    background-color: rgba(48, 48, 48, 1);
+    color: white;
+    font-size: 1.5vw;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    border: none;
+}
+
+.filterclass {
+    background-color: white;
+    border: white;
+    font-size: 1.5vw;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 1vw;
+    outline: none;
+}
+
+.filterclass:hover {
+    text-decoration: underline;
+}
+
+#myDIV {
+    margin-top: 0.2vw;
+    display: none;
+}
+
+#myDIV h3 {
+    padding-right: 1vw;
+    padding-left: 2vw;
+    display: inline;
+    font-size: 1.5vw;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#Buttons {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-right: 2vw;
+}
+
+/* Background Images */
+
+.workimages {
+    width: 30vw;
+    height: 30vw;
+    margin-left: 4vw;
+    margin-bottom: 4vw;
+    background-size: 30vw;
+}
+
+#one {
+    background-image: url(workimages/Lucy1.jpg);
+}
+#two {
+    background-image: url(workimages/Milan1.jpg);
+}
+#three {
+    background-image: url(workimages/Rielle1.jpg);
+}
+#four {
+    background-image: url(workimages/Tom1.jpg);
+}
+#five {
+    background-image: url(workimages/Yui1.jpg);
+}
+#six {
+    background-image: url(workimages/Lucy2.jpg);
+}
+#seven {
+    background-image: url(workimages/Milan2.jpg);
+}
+#eight {
+    background-image: url(workimages/Rielle2.jpg);
+}
+#nine {
+    background-image: url(workimages/Tom2.jpg);
+}
+#ten {
+    background-image: url(workimages/Yui2.jpg);
+}
+#eleven {
+    background-image: url(workimages/Lucy3.jpg);
+}
+#twelve {
+    background-image: url(workimages/Milan3.jpg);
+}
+#thirdteen {
+    background-image: url(workimages/Rielle3.jpg);
+}
+#fourteen {
+    background-image: url(workimages/Tom3.jpg);
+}
+#fifteen {
+    background-image: url(workimages/Yui3.jpg);
+}
+#sixteen {
+    background-image: url(workimages/Lucy4.jpg);
+}
+#seventeen {
+    background-image: url(workimages/Milan4.jpg);
+}
+#eighteen {
+    background-image: url(workimages/Rielle4.jpg);
+}
+#nineteen {
+    background-image: url(workimages/Tom4.jpg);
+}
+#twenty {
+    background-image: url(workimages/Yui4.jpg);
+}
+
+.overlay {
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(219, 219, 219, 0.7);
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 1vw;
+    width: 29vw;
+    height: 30vw;
+    color: black;
+}
+
+.overlay h1 {
+    margin: 0;
+    font-size: 3vw;
+    padding-top: 22vw;
+}
+
+.overlay h3 {
+    margin: 0;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+}
+
+.overlay p {
+    margin: 0;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+}
+
+.overlay .head {
+    margin: 0;
+    font-size: 3vw;
+    padding-top: 22vw;
+}
+
+.overlay .head1 {
+    margin: 0;
+    font-size: 3vw;
+    padding-top: 18vw;
+}
+
+.workimages:hover .overlay {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1400px) {
+    .workimages {
+        width: 25vw;
+        height: 25vw;
+        margin-left: 4vw;
+        margin-bottom: 4vw;
+        background-size: 25vw;
+    }
+
+    #myDIV {
+        margin-top: 0vw;
+    }
+
+    .overlay {
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .workimages {
+        width: 24vw;
+        height: 25vw;
+        margin-left: 4vw;
+        margin-bottom: 4vw;
+        background-size: 24vw;
+    }
+
+    .overlay {
+        width: 24vw;
+        height: 24vw;
+    }
+}
+
+/* About Page */
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#containerAboutUs {
+    display: block;
+    margin-top: 4vw;
+}
+
+#containerAboutUs hr {
+    margin-top: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#aboutUsCaption {
+    margin-left: 3vw;
+    text-align: center;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#aboutUsCaption img {
+    width: 60vw;
+    height: 30vw;
+}
+
+#aboutUsCaption h3 {
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+
+#aboutUsCaption p {
+    text-align: justify;
+    font-size: 1vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.profile {
+    display: grid;
+    grid-template-areas:
+        "img h1"
+        "img h3"
+        "img p";
+    margin-top: 6vw;
+    margin-left: 20vw;
+    margin-right: 15vw;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.profile img {
+    width: 15vw;
+}
+
+.profile div {
+    margin-left: 2vw;
+}
+
+.profile h1 {
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    font-size: 3vw;
+    font-weight: normal;
+}
+
+.profile h3 {
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+
+.profile p {
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+    font-weight: normal;
+}
+
+/* Grid Names */
+
+.profile img {
+    grid-area: img;
+}
+
+.profile h1 {
+    grid-area: h1;
+}
+
+.profile h3 {
+    grid-area: h3;
+}
+
+.profile p {
+    grid-area: p;
+}
+
+/* Specific Work Pages */
+
+#container2 {
+    margin-top: 6vw;
+}
+
+.specificWork {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    margin-left: vw;
+    margin-bottom: 3vw;
+    text-align: center;
+}
+
+.specificWork img {
+    width: 35vw;
+}
+.specificWork h1 {
+    font-size: 1vw;
+    font-weight: thin;
+    font-style: normal;
+}
+
+.specificWork p {
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 1.3vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.specificWork #description {
+    text-align: left;
+    margin-right: 12vw;
+    margin-left: 12vw;
+    font-size: 1vw;
+}
+
+.workProfile {
+    color: black;
+}
+
+.workProfile img {
+    width: 10vw;
+}
+
+#title {
+    font-size: 1.7vw;
+    margin: 0vw;
+}
+
+#profession {
+    font-size: 1.5vw;
+    margin: 0vw;
+}
+
+.specificWork .description {
+    text-align: center;
+    margin-top: 0.3vw;
+    margin-right: 12vw;
+    margin-left: 12vw;
+    font-size: 1vw;
+}

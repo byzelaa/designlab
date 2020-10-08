@@ -5,46 +5,131 @@
         <link rel="stylesheet" href="styles.css" />
         <link rel="stylesheet" href="https://use.typekit.net/owh4xhz.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
     </head>
 
     <!-- Nav Bar -->
-
-    <div class="nav">
-        <div class="mobile-bar">
-            <div class="logo">
-                <a href="home.html">Design Lab.</a>
+    <body>
+        <div class="nav">
+            <div class="mobile-bar">
+                <div class="logo">
+                    <a href="home.html">Design Lab.</a>
+                </div>
+                <i class="fa fa-bars"></i>
             </div>
-            <i class="fa fa-bars"></i>
+            <div class="founded">founded 2020</div>
+            <ul class="navlinks">
+                <i class="fas fa-times"></i>
+                <li class="navlink">
+                    <a href="home.html">home</a>
+                </li>
+                <li class="navlink navlink-active">
+                    <a href="about.html">about</a>
+                </li>
+                <li class="navlink">
+                    <a href="work.html">work</a>
+                </li>
+                <li class="navlink">
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
         </div>
-        <div class="founded">founded 2020</div>
-        <ul class="navlinks">
-            <i class="fas fa-times"></i>
-            <li class="navlink navlink-active">
-                <a href="home.html">home</a>
-            </li>
-            <li class="navlink"><a href="about.html">about</a></li>
-            <li class="navlink">
-                <a href="#insertpagelink">work</a>
-            </li>
-            <li class="navlink">
-                <a href="#insertpagelink">contact</a>
-            </li>
-        </ul>
-    </div>
 
-    <!-- Content -->
-    <div class="content">
-        <div class="aboutus">
-            <h4>About Us</h4>
+        <!-- Content -->
+        <div class="content">
+            <div id="containerAboutUs">
+                <div id="aboutUsCaption">
+                    <img src="aboutimages/PlacementAbout.png" alt="About US" />
+                    <h3>About Us</h3>
+                    <p>
+                        Design Lab is a small design studio based in Wellington,
+                        New Zealand. With several designers focusing on
+                        different aspects of design we are sure to find someone
+                        best suited to you and your needs. We focus on Graphic,
+                        Industrial, Interaction Design and Website UX. To find
+                        out more about our individual designers click below.
+                    </p>
+                    <hr />
+                </div>
+                <div class="profile">
+                    <img src="aboutImages/LUCY.png" alt="Lucy C" />
+                    <div>
+                        <h1>Lucy B.</h1>
+                        <h3>Industrial Designer</h3>
+                        <p>
+                            Experienced in Adobe Premiere Pro on Animation &
+                            Visual Effects and Video Editing.
+                        </p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="aboutImages/TOM.png" alt="Tom D" />
+                    <div>
+                        <h1 class="nameHover">Tom D.</h1>
+                        <h3>Identity Designer</h3>
+                        <p>
+                            Experienced in branding and identity for companies,
+                            big or small.
+                        </p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="aboutImages/MILAN.png" alt="Milan B" />
+                    <div>
+                        <h1>Milan B.</h1>
+                        <h3>Industrial Designer</h3>
+                        <p>
+                            Experienced in CAD for manufacturing and digital
+                            rendering.
+                        </p>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="aboutImages/YUI.png" alt="Yui S" />
+                    <div>
+                        <h1>Yui S.</h1>
+                        <h3>Industrial Designer</h3>
+                        <p>Experienced in CAD, Arduino IDE, and photography.</p>
+                    </div>
+                </div>
+            </div>
 
-            <p>
-                Design Lab is a small design studio based in Wellington, New
-                Zealand. With several designers focusing on different aspects of
-                design we are sure to find someone best suited to you and your
-                needs. We focus on Graphic, Industrial, Interaction Design and
-                Website UX. To find out more about our individual designers
-                click below.
-            </p>
+            <div class="footer">
+                <p>©copyright <span class="font-black">*Design Lab</span></p>
+            </div>
         </div>
-    </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1;
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 3 seconds
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(".fa-bars").click(function () {
+                $(".navlinks").slideDown();
+                $(".fa-times").css("opacity", 1);
+            });
+            $(".fa-times").click(function () {
+                $(".fa-times").css("opacity", 0);
+                $(".navlinks").slideUp();
+            });
+        </script>
+    </body>
 </html>

@@ -1,15 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>designlab</title>
-    <link rel='stylesheet' href="stylesheet.css" />
-   <script src="javaescript.js"></script>
-</head>
-<body>
+<html>
+    <head>
+        <title>DesignLab</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/owh4xhz.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+    </head>
 
+    <!-- Nav Bar -->
+    <body>
+        <div class="nav">
+            <div class="mobile-bar">
+                <div class="logo">
+                    <a href="home.html">Design Lab.</a>
+                </div>
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="founded">founded 2020</div>
+            <ul class="navlinks">
+                <i class="fas fa-times"></i>
+                <li class="navlink navlink-active">
+                    <a href="home.html">home</a>
+                </li>
+                <li class="navlink"><a href="about.html">about</a></li>
+                <li class="navlink">
+                    <a href="work.html">work</a>
+                </li>
+                <li class="navlink">
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
 
-</body>
-</html> 
+        <!-- Content -->
+        <div class="content">
+            <div class="slideshow">
+                <div class="container">
+                    <img class="mySlides" src="carousel/Home_Lucy.jpg" />
+                    <img class="mySlides" src="carousel/Home_Lucy2.jpg" />
+                    <img class="mySlides" src="carousel/Home_Milan.jpg" />
+                    <img class="mySlides" src="carousel/Home_Milan2.jpg" />
+                    <img class="mySlides" src="carousel/Home_Rielle.jpg" />
+                    <img class="mySlides" src="carousel/Home_Rielle2.jpg" />
+                    <img class="mySlides" src="carousel/Home_Tom.jpg" />
+                    <img class="mySlides" src="carousel/Home_Tom2.jpg" />
+                    <img class="mySlides" src="carousel/Home_Yui.jpg" />
+                    <img class="mySlides" src="carousel/Home_Yui2.jpg" />
+                </div>
+                <div class="missionstatement-outer">
+                    <div class="missionstatement">
+                        <p>
+                            Our mission statement is to provide our client's
+                            with professional designs that would help represent
+                            them in a positive, creative and thought provoking
+                            way. Develop a reputation of excellence and
+                            commitment to providing creative and thought
+                            provoking projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>©copyright <span class="font-black">*Design Lab</span></p>
+            </div>
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1;
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 3 seconds
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(".fa-bars").click(function () {
+                $(".navlinks").slideDown();
+                $(".fa-times").css("opacity", 1);
+            });
+            $(".fa-times").click(function () {
+                $(".fa-times").css("opacity", 0);
+                $(".navlinks").slideUp();
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DesignLab</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/owh4xhz.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+    </head>
+
+    <!-- Nav Bar -->
+    <body>
+        <div class="nav">
+            <div class="mobile-bar">
+                <div class="logo">
+                    <a href="home.html">Design Lab.</a>
+                </div>
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="founded">founded 2020</div>
+            <ul class="navlinks">
+                <i class="fas fa-times"></i>
+                <li class="navlink navlink-active">
+                    <a href="home.html">home</a>
+                </li>
+                <li class="navlink"><a href="about.html">about</a></li>
+                <li class="navlink">
+                    <a href="work.html">work</a>
+                </li>
+                <li class="navlink">
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div id="container2">
+                <div class="specificWork">
+                    <img
+                        src="workimages/Milan3.jpg"
+                        alt="Covid Finger Sterilizer"
+                    />
+                    <p>
+                        Covid Finger Sterilizer<br />
+                        Industrial Design
+                    </p>
+                    <p id="description">
+                        During the pandemic I was asked to create a device that
+                        would fit on a person's finger due to the curcumstances
+                        I decided to create a device that sterilized surfaces a
+                        finger would come in contact with. It emits UV light to
+                        kill off germs and bacteria.
+                    </p>
+                    <a href="about.html">
+                        <div class="workProfile">
+                            <p>WORK BY:</p>
+                            <img src="aboutImages/MILAN.png" alt="Milan" />
+                            <p id="title">Milan B.</p>
+                            <p id="profession">Industrial Designer</p>
+                            <p class="description">
+                                Experienced in CAD for manufacturing and digital
+                                rendering.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1;
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 3 seconds
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(".fa-bars").click(function () {
+                $(".navlinks").slideDown();
+                $(".fa-times").css("opacity", 1);
+            });
+            $(".fa-times").click(function () {
+                $(".fa-times").css("opacity", 0);
+                $(".navlinks").slideUp();
+            });
+        </script>
+    </body>
+</html>

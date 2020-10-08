@@ -1,30 +1,253 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>DesignLab</title>
-            <link rel="stylesheet" href="styles.css"/>
-            <link rel="stylesheet" href="https://use.typekit.net/owh4xhz.css"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/owh4xhz.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
     </head>
 
-<!-- Nav Bar -->
+    <!-- Nav Bar -->
+    <body>
+        <div class="nav">
+            <div class="mobile-bar">
+                <div class="logo">
+                    <a href="home.html">Design Lab.</a>
+                </div>
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="founded">founded 2020</div>
+            <ul class="navlinks">
+                <i class="fas fa-times"></i>
+                <li class="navlink">
+                    <a href="home.html">home</a>
+                </li>
+                <li class="navlink"><a href="about.html">about</a></li>
+                <li class="navlink navlink-active">
+                    <a href="work.html">work</a>
+                </li>
+                <li class="navlink">
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
 
-<div class="nav">
-    <div class="icon">*</div>
-    <div class="logo"><a href="home.html">Design Lab.</a></div>
-    <div class="founded">founded 2020</div>
+        <!-- Content -->
+        <div class="content">
+            <div id="container">
+                <div id="Buttons">
+                    <button class="filter" onclick="filterClick()">
+                        FILTER
+                    </button>
+                    <div id="myDIV">
+                        <h3>sort by:</h3>
+                        <button class="filterclass">designer</button>
+                        <button class="filterclass">design field</button>
+                    </div>
+                </div>
+                <div id="work">
+                    <div class="workimages" id="one">
+                        <a href="Lucy1.html">
+                            <div class="overlay">
+                                <p class="head">Offline</p>
+                                <p>Communication Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="two">
+                        <a href="Milan1.html">
+                            <div class="overlay">
+                                <p class="head">Robo Recall</p>
+                                <p>Industrial Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="three">
+                        <a href="Rielle1.html">
+                            <div class="overlay">
+                                <p class="head1">Friends of Korea Quiz Night</p>
+                                <p>Graphic Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="four">
+                        <a href="Tom1.html">
+                            <div class="overlay">
+                                <p class="head">Maria Album</p>
+                                <p>Branding</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="five">
+                        <a href="Yui1.html">
+                            <div class="overlay">
+                                <p class="head">Pikari</p>
+                                <p>Light Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="six">
+                        <a href="Lucy2.html">
+                            <div class="overlay">
+                                <p class="head">Bubbles</p>
+                                <p>Industrial Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="seven">
+                        <a href="Milan2.html">
+                            <div class="overlay">
+                                <p class="head">Interactive Lamp</p>
+                                <p>Light Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="eight">
+                        <a href="Rielle2.html">
+                            <div class="overlay">
+                                <p class="head1">Friends of Korea RDP Event</p>
+                                <p>Graphic Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="nine">
+                        <a href="Tom2.html">
+                            <div class="overlay">
+                                <p class="head">Vibrant Juice</p>
+                                <p>Packaging</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="ten">
+                        <a href="Yui2.html">
+                            <div class="overlay">
+                                <p class="head">Time destroys</p>
+                                <p>Photography</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="eleven">
+                        <a href="Lucy3.html">
+                            <div class="overlay">
+                                <p class="head">LYBRNTH3</p>
+                                <p>Industrial Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="twelve">
+                        <a href="Milan3.html">
+                            <div class="overlay">
+                                <p class="head1">Covid Finger Sterilizer</p>
+                                <p>Industrial Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="thirdteen">
+                        <a href="Rielle3.html">
+                            <div class="overlay">
+                                <p class="head1">
+                                    Japan Society Club Meet & Greet Event
+                                </p>
+                                <p>Graphic Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="fourteen">
+                        <a href="Tom3.html">
+                            <div class="overlay">
+                                <p class="head">IBC Auto</p>
+                                <p>Branding</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="fifteen">
+                        <a href="Yui3.html">
+                            <div class="overlay">
+                                <p class="head">Time travel</p>
+                                <p>Photography</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="sixteen">
+                        <a href="Lucy4.html">
+                            <div class="overlay">
+                                <p class="head">Sound Sculpt</p>
+                                <p>Industrial Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="seventeen">
+                        <a href="Milan4.html">
+                            <div class="overlay">
+                                <p class="head">Table Locator</p>
+                                <p>Interactive Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="eighteen">
+                        <a href="Rielle3.html">
+                            <div class="overlay">
+                                <p class="head">Mario Kart Tournament</p>
+                                <p>Graphic Design</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="nineteen">
+                        <a href="Tom4.html">
+                            <div class="overlay">
+                                <p class="head">kissme. skincare</p>
+                                <p>Branding</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="workimages" id="twenty">
+                        <a href="Yui4.html">
+                            <div class="overlay">
+                                <p class="head">Te Mata Peak</p>
+                                <p>Astrophotography</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="navlinkhome"><a href="home.html">home</a></div>
-    <div class="navlinkabout"><a href="about.html">about</a></div>
-    <div class="navlinkwork"><a href="#insertpagelink">work</a></div>
-    <div class="navlinkcontact"><a href="#insertpagelink">contact</a></div>
-    
-</div>
+            <div class="footer">
+                <p>©copyright <span class="font-black">*Design Lab</span></p>
+            </div>
+        </div>
 
-<!-- Content -->
-<div class="content">
-    
+        <script>
+            var myIndex = 0;
+            carousel();
 
-</div>
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1;
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000); // Change image every 3 seconds
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(".fa-bars").click(function () {
+                $(".navlinks").slideDown();
+                $(".fa-times").css("opacity", 1);
+            });
+            $(".fa-times").click(function () {
+                $(".fa-times").css("opacity", 0);
+                $(".navlinks").slideUp();
+            });
+        </script>
+    </body>
+</html>
