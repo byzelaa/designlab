@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 @import url("https://use.typekit.net/zcs7ceo.css");
 
-body { background:rgb(255, 255, 255)55, 255); }
+body { background:white; }
 form { max-width:576px; margin:50px auto; }
 
 h1 {
@@ -22,30 +22,8 @@ h2 {
     color: white;
 }
 
-.feedback-input {
-    color:black;
-    font-family:'Jost', sans-serif;
-    font-weight:500;
-    font-size: 26px;
-    border-radius: 5px;
-    line-height: 22px;
-    background-color: transparent;
-    border:1px solid #C4C4C4;
-    transition: all 0.3s;
-    padding: 13px;
-    margin-bottom: 15px;
-    width:100%;
-    box-sizing: border-box;
-    outline:0;
-}
-
-.feedback-input:focus { border:2px solid #CC4949; }
-
-textarea {
-    height: 150px;
-    line-height: 150%;
-    resize:vertical;
-}
+/* Return to Page Box
+ * =============================== */
 
 [type="submit"] {
     font-family: 'Jost', sans-serif;
@@ -59,12 +37,10 @@ textarea {
     padding-top:10px;
     padding-bottom:10px;
     transition: all 0.3s;
-
-
 }
 [type="submit"]:hover { color:#748D65; background:white; }
 
-/* [Object] Modal
+/* Thank You Box
  * =============================== */
  .modal {
     opacity: 0;
@@ -105,44 +81,10 @@ textarea {
     position: absolute;
     width: 100%;
     height: 100%;
-    left: -30px;
     margin: auto;
     background: rgba(116, 141, 101, 0.9);
-    border-radius: 5px;
-    padding: 15em 2em;
     text-align: center;
-  }
-  
-  .modal__close {
-    position: absolute;
-    right: 1em;
-    top: 1em;
-    width: 1.1em;
-    height: 1.1em;
-    cursor: pointer;
-  }
-  
-  .modal__close:after,
-  .modal__close:before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 1.5em;
-    background: #ccc;
-    display: block;
-    transform: rotate(45deg);
-    left: 50%;
-    margin: -3px 0 0 -1px;
-    top: 0;
-  }
-  
-  .modal__close:hover:after,
-  .modal__close:hover:before {
-    background: #aaa;
-  }
-  
-  .modal__close:before {
-    transform: rotate(-45deg);
+    padding-top: 7em;
   }
   
   @media screen and (max-width: 768px) {
@@ -155,12 +97,12 @@ textarea {
   }
   
   
-  /* Other
+  /* Send Button
    * =============================== */
   body {
     padding: 1%;
     font-family:'Jost', sans-serif;
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
   }
   
@@ -171,7 +113,8 @@ textarea {
     color: #fff;
     border-radius: 3px;
     transition: all 0.3s;
-    margin-left: 70%;
+    margin-left: 77%;
+    font-size: 20px;
   }
   
   .btn:hover,
@@ -184,24 +127,12 @@ textarea {
     box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
   }
   
-  .btn--blue {
-    background: #2980b9;
-  }
-  
-  .btn--blue:hover,
-  .btn--blue:focus {
-    background: #3498db;
-  }
-  
-  .btn--blue:active {
-    background: #2980b9;
-  }
 
-    /* contact 02
+
+    /* contact form
    * =============================== */
 
   .boxhub-form__field:focus,
-.boxhub-form__field::moz-inner-focus,
 .boxhub-form__field:active {
   border: none;
   outline: none;
@@ -216,6 +147,7 @@ textarea {
   line-height: 2;
   text-align: left;
   font-size: 26px;;
+  font-family:'Jost', sans-serif;
 }
 
 .boxhub-form__input {
@@ -228,6 +160,8 @@ textarea {
   border-bottom: 1px solid #ccc;
   color: #000000;
   width: 320px;
+  font-size: 25px;
+  font-family:'Jost', sans-serif;
 }
 
 .boxhub-form__field:focus ~ .boxhub-form__border {
@@ -268,4 +202,4 @@ textarea {
 
 .boxhub-form__submit:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
+} 
