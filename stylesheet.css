@@ -1,9 +1,12 @@
+/* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 @import url("https://use.typekit.net/zcs7ceo.css");
 
+/* Permanent Shit */
 body { background:white; }
 form { max-width:576px; margin:50px auto; }
 
+/* Titles, Headings, Paragraphs Settings */
 h1 {
     font-family:'Jost', sans-serif;
     font-weight: 400;
@@ -22,9 +25,7 @@ h2 {
     color: white;
 }
 
-/* Return to Page Box
- * =============================== */
-
+/* Return to Contact Form Button, Located in the Modal Box */
 [type="submit"] {
     font-family: 'Jost', sans-serif;
     width: 319px;
@@ -40,8 +41,7 @@ h2 {
 }
 [type="submit"]:hover { color:#748D65; background:white; }
 
-/* Thank You Box
- * =============================== */
+/* Modal Box aka Thank You Pop Up Box */
  .modal {
     opacity: 0;
     visibility: hidden;
@@ -97,8 +97,7 @@ h2 {
   }
   
   
-  /* Send Button
-   * =============================== */
+/* Send Contact Message Button */
   body {
     padding: 1%;
     font-family:'Jost', sans-serif;
@@ -127,10 +126,7 @@ h2 {
     box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
   }
   
-
-
-    /* contact form
-   * =============================== */
+/* Form Box Settings */
 
   .boxhub-form__field:focus,
 .boxhub-form__field:active {
