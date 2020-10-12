@@ -1430,7 +1430,202 @@ a {
 }
 
 
-  
+/* Contact Page*/
 
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url("https://use.typekit.net/zcs7ceo.css");
+
+/* Titles, Headings, Paragraphs Settings */
+h4 {
+    font-family:'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    font-style: normal;
+    text-align: left;
+}
+
+h5 {
+    font-family: 'IvyPresto-Display', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    text-align: center;
+    color: white;
+}
+
+/* Return to Contact Form Button, Located in the Modal Box */
+[type="submit"] {
+    font-family: 'Jost', sans-serif;
+    width: 319px;
+    background:#303030;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:14px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+}
+[type="submit"]:hover { color:#748D65; background:white; }
+
+/* Modal Box aka Thank You Pop Up Box */
+ .modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    transition: opacity .25s ease;
+    z-index: 2;
+  }
   
- 
+  .modal__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .modal-state {
+    display: none;
+  }
+  
+  .modal-state:checked + .modal {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal-state:checked + .modal .modal__inner {
+    top: 0;
+  }
+  
+  .modal__inner {
+    transition: top .25s ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: rgba(116, 141, 101, 0.9);
+    text-align: center;
+    padding-top: 7em;
+  }
+  
+  @media screen and (max-width: 768px) {
+      
+    .modal__inner {
+      width: 90%;
+      height: 90%;
+      box-sizing: border-box;
+    }
+  }
+  
+  
+/* Send Contact Message Button */
+  body {
+    padding: 1%;
+    font-family:'Jost', sans-serif;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .btn {
+    cursor: pointer;
+    background: #303030;
+    padding: .4em 2em;
+    color: #fff;
+    border-radius: 3px;
+    transition: all 0.3s;
+    font-size: 20px;
+    margin: 40%;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background: #748D65;
+  }
+  
+  .btn:active {
+    background: #748D65;
+    box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+  }
+  
+/* Form Box Settings */
+
+  .boxhub-form__field:focus,
+.boxhub-form__field:active {
+  border: none;
+  outline: none;
+}
+
+.boxhub-form {
+  box-shadow: 0 0 20px #fafafa;
+  color: #000000;
+  height: 300px;
+  margin: 8% auto;
+  padding: 50px;
+  line-height: 2;
+  text-align: left;
+  font-size: 26px;;
+  font-family:'Jost', sans-serif;
+}
+
+.boxhub-form__input {
+  position: relative;
+}
+
+.boxhub-form__field {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  color: #000000;
+  width: 320px;
+  font-size: 25px;
+  font-family:'Jost', sans-serif;
+}
+
+.boxhub-form__field:focus ~ .boxhub-form__border {
+  transition: 0.4s;
+  width: 100%;
+}
+
+.boxhub-form__border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #748D65;
+  transition: 0.4s;
+}
+
+.boxhub-form__select {
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.boxhub-form__submit {
+  background-color: #748D65;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 20px auto;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.boxhub-form__submit:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+} 

@@ -40,7 +40,50 @@
         <div class="content">
             <!-- start contact page content -->
 
+            <form class="boxhub-form">
+
+                <h4>Hi there! How can we help you?</h4>
+
+                </br>
+            
+                <span>Hello, my name is </span>
+                <span class="boxhub-form__input">
+                  <input type="text" placeholder="full name" class="boxhub-form__field" pattern="[a-zA-Z0-9 ]+" />
+                  <span class="boxhub-form__border"></span>
+                </span>
+            
+                <span><br /> I wanted to ask you</span>
+                <span class="boxhub-form__input">
+                  <input type="text" placeholder="message" class="boxhub-form__field" pattern="[a-zA-Z0-9 ]+" />
+                  <span class="boxhub-form__border"></span>
+                </span>
+            
+                <span><br /> you can contact me at</span>
+                <span class="boxhub-form__input">
+                  <input type="email" placeholder="email" class="boxhub-form__field" />
+                  <span class="boxhub-form__border"></span>
+                </span>
+                <div>
+                  <p>
+                    <label class="btn" for="modal-1">SEND</label>
+                  </p>
+                </div> 
+            
+                <input class="modal-state" id="modal-1" type="checkbox" />
+                <div class="modal">
+                  <label class="modal__bg" for="modal-1"></label>
+                    <div class="modal__inner">
+                    <label class="modal__close" for="modal-1"></label>
+                    <h5>THANK YOU FOR <br>SUBMITTING!</h5>
+                      <p>
+                        <input type="submit" value="CLICK HERE TO RETURN"/>
+                      </p>
+                    </div>
+                </div>
+              </form>
+
             <!-- end contact page content -->
+            
             <div class="footer">
                 <p>©copyright <span class="font-black">*Design Lab</span></p>
             </div>
