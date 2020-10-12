@@ -275,7 +275,6 @@ a {
 
 #container {
     display: block;
-    margin-top: 9vw;
 }
 
 /* Filter Buttons */
@@ -331,10 +330,51 @@ a {
     grid-template-columns: 1fr 3fr;
 }
 
-#work {
+.work {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'one two'
+    'three four'
+    'five six'
+    'seven eight'
+    'nine ten'
+    'eleven twelve'
+    'thirdteen fourteen'
+    'fifteen sixteen'
+    'seventeen eighteen'
+    'nineteen twenty';
+    margin-right: 2vw;
+}
+
+.designer{
+    display: grid;
+    grid-template-areas: 
+    'one six'
+    'eleven sixteen'
+    'two seven'
+    'twelve seventeen'
+    'three eight'
+    'thirdteen eighteen'
+    'four nine'
+    'fourteen nineteen'
+    'five ten'
+    'fifteen twenty';
+    margin-right: 2vw;
+}
+
+.designfield{
+    display: grid;
+    grid-template-areas: 
+    'four fourteen'
+    'nineteen one'
+    'three eight'
+    'thirdteen eighteen'
+    'five seven'
+    'two six'
+    'eleven twelve'
+    'sixteen seventeen'
+    'nine ten'
+    'fifteen twenty';  
     margin-right: 2vw;
 }
 
@@ -346,78 +386,108 @@ a {
     margin-left: 4vw;
     margin-bottom: 4vw;
     background-size: 30vw;
+    filter:grayscale(100%);
+    transition: all .5s;
 }
+
+.workimages:hover{
+    filter:grayscale(0%);
+    filter: drop-shadow(16px 16px 20px black);
+    width: 31vw;
+    height: 31vw;
+    background-size: 32vw;
+}
+
 
 #one {
     background-image: url(workimages/Lucy1.jpg);
+    grid-area: one;
 }
 #two {
     background-image: url(workimages/Milan1.jpg);
+    grid-area: two;
 }
 #three {
     background-image: url(workimages/Rielle1.jpg);
+    grid-area: three;
 }
 #four {
     background-image: url(workimages/Tom1.jpg);
+    grid-area: four;
 }
 #five {
     background-image: url(workimages/Yui1.jpg);
+    grid-area: five;
 }
 #six {
     background-image: url(workimages/Lucy2.jpg);
+    grid-area: six;
 }
 #seven {
     background-image: url(workimages/Milan2.jpg);
+    grid-area: seven;
 }
 #eight {
     background-image: url(workimages/Rielle2.jpg);
+    grid-area: eight;
 }
 #nine {
     background-image: url(workimages/Tom2.jpg);
+    grid-area: nine;
 }
 #ten {
     background-image: url(workimages/Yui2.jpg);
+    grid-area: ten;
 }
 #eleven {
     background-image: url(workimages/Lucy3.jpg);
+    grid-area: eleven;
 }
 #twelve {
     background-image: url(workimages/Milan3.jpg);
+    grid-area: twelve;
 }
 #thirdteen {
     background-image: url(workimages/Rielle3.jpg);
+    grid-area: thirdteen;
 }
 #fourteen {
     background-image: url(workimages/Tom3.jpg);
+    grid-area: fourteen;
 }
 #fifteen {
     background-image: url(workimages/Yui3.jpg);
+    grid-area: fifteen;
 }
 #sixteen {
     background-image: url(workimages/Lucy4.jpg);
+    grid-area: sixteen;
 }
 #seventeen {
     background-image: url(workimages/Milan4.jpg);
+    grid-area: seventeen;
 }
 #eighteen {
     background-image: url(workimages/Rielle4.jpg);
+    grid-area: eighteen;
 }
 #nineteen {
     background-image: url(workimages/Tom4.jpg);
+    grid-area: nineteen;
 }
 #twenty {
     background-image: url(workimages/Yui4.jpg);
+    grid-area: twenty;
 }
 
 .overlay {
-    opacity: 0;
+    opacity: 1;
     transition: 0.5s ease;
-    background-color: rgba(219, 219, 219, 0.7);
     font-family: Jost;
     font-style: normal;
     font-weight: normal;
     padding-left: 1vw;
-    width: 29vw;
+    width: 30vw;
     height: 30vw;
     color: black;
 }
@@ -453,7 +523,7 @@ a {
 }
 
 .workimages:hover .overlay {
-    opacity: 1;
+    color: white;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -473,22 +543,446 @@ a {
         width: 25vw;
         height: 25vw;
     }
+
+    .overlay .head {
+        margin: 0;
+        font-size: 3vw;
+        padding-top: 18vw;
+    }
+    
+    .overlay .head1 {
+        margin: 0;
+        font-size: 3vw;
+        padding-top: 14vw;
+    }
 }
 
 @media only screen and (max-width: 1050px) {
+
+
     .workimages {
-        width: 24vw;
+        width: 25vw;
         height: 25vw;
-        margin-left: 4vw;
+        margin-left: 3vw;
         margin-bottom: 4vw;
-        background-size: 24vw;
+        background-size: 25vw;
     }
 
     .overlay {
-        width: 24vw;
-        height: 24vw;
+        width: 25vw;
+        height: 25vw;
     }
 }
+
+@media only screen and (max-width: 991px){
+    .work{
+        display: block;
+    }
+
+    .designer{
+        display: grid;
+        grid-template-areas: 
+        'one' 
+        'six'
+        'eleven' 
+        'sixteen'
+        'two' 
+        'seven'
+        'twelve' 
+        'seventeen'
+        'three' 
+        'eight'
+        'thirdteen' 
+        'eighteen'
+        'four' 
+        'nine'
+        'fourteen' 
+        'nineteen'
+        'five' 
+        'ten'
+        'fifteen' 
+        'twenty';
+    }
+
+    .designfield{
+        display: grid;
+        grid-template-areas: 
+        'four'
+        'fourteen'
+        'nineteen'
+        'one'
+        'three'
+        'eight'
+        'nine'
+        'thirdteen'
+        'eighteen'
+        'five'
+        'seven'
+        'two'
+        'six'
+        'eleven'
+        'twelve'
+        'sixteen'
+        'seventeen'
+        'ten'
+        'fifteen'
+        'twenty'        
+    }
+
+
+    .workimages {
+        width: 53vw;
+        height: 53vw;
+        margin-left: 25vw;
+        margin-bottom: 4vw;
+        background-size: 53vw;
+        filter:grayscale(0%);
+    }
+
+    .workimages:hover{
+        filter:grayscale(0%);
+        filter: drop-shadow(none);
+        width: 53vw;
+        height: 53vw;
+        background-size: 53vw;
+    }
+
+    .overlay {
+        width: 53vw;
+        height: 53vw;
+        color: white;
+    }
+
+    .overlay .head {
+        margin: 0;
+        font-size: 6vw;
+        padding-top: 39vw;
+    }
+    
+    .overlay .head1 {
+        margin: 0;
+        font-size: 6vw;
+        padding-top: 30vw;
+    }
+
+    .overlay p {
+        margin: 0;
+        margin-top: 0.5vw;
+        font-size: 3vw;
+    }
+
+    .filter {
+        margin-left: 25vw;
+        margin-bottom: 2vw;
+        padding-top: 0.7vw;
+        padding-bottom: 0.7vw;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        background-color: rgba(48, 48, 48, 1);
+        color: white;
+        font-size: 2vw;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+        border: none;
+    }
+    
+    .filterclass {
+        background-color: white;
+        border: white;
+        font-size: 2.5vw;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+        padding-right: 1vw;
+        outline: none;
+    }
+    
+    .filterclass:hover {
+        text-decoration: underline;
+    }
+    
+    #myDIV {
+        display: none;
+    }
+    
+    #myDIV h3 {
+        padding-right: 1vw;
+        padding-left: 2vw;
+        display: inline;
+        font-size: 2.5vw;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+    }
+    
+    #Buttons {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+    .work{
+        display: block;
+    }
+
+    .workimages {
+        width: 60vw;
+        height: 60vw;
+        margin-left: 20vw;
+        background-size: 60vw;
+    }
+
+    .workimages:hover{
+        filter:grayscale(0%);
+        filter: drop-shadow(none);
+        width: 60vw;
+        height: 60vw;
+        background-size: 60vw;
+    }
+    .overlay {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .overlay .head {
+        padding-top: 45vw;
+    }
+    
+    .overlay .head1 {
+        padding-top: 36vw;
+    }
+
+    .filter {
+        margin-left: 20vw;
+    }
+   
+    .designer{
+        display: grid;
+        grid-template-areas: 
+        'one' 
+        'six'
+        'eleven' 
+        'sixteen'
+        'two' 
+        'seven'
+        'twelve' 
+        'seventeen'
+        'three' 
+        'eight'
+        'thirdteen' 
+        'eighteen'
+        'four' 
+        'nine'
+        'fourteen' 
+        'nineteen'
+        'five' 
+        'ten'
+        'fifteen' 
+        'twenty';
+    }
+
+    .designfield{
+        display: grid;
+        grid-template-areas: 
+        'four'
+        'fourteen'
+        'nineteen'
+        'one'
+        'three'
+        'eight'
+        'nine'
+        'thirdteen'
+        'eighteen'
+        'five'
+        'seven'
+        'two'
+        'six'
+        'eleven'
+        'twelve'
+        'sixteen'
+        'seventeen'
+        'ten'
+        'fifteen'
+        'twenty'        
+    }
+
+}
+
+
+
+@media only screen and (max-width: 685px){
+    .work{
+        display: block;
+    }
+
+    .workimages {
+        width: 80vw;
+        height: 80vw;
+        margin-left: 10vw;
+        margin-bottom: 4vw;
+        background-size: 80vw;
+    }
+
+    .workimages:hover{
+        filter:grayscale(0%);
+        filter: drop-shadow(none);
+        width: 80vw;
+        height: 80vw;
+        background-size: 80vw;
+    }
+    .overlay {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .overlay .head {
+        margin: 0;
+        font-size: 10vw;
+        padding-top: 57vw;
+    }
+    
+    .overlay .head1 {
+        margin: 0;
+        font-size: 10vw;
+        padding-top: 42vw;
+    }
+
+    .overlay p {
+        margin: 0;
+        margin-top: 0.5vw;
+        font-size: 5vw;
+    }
+
+    .filter {
+        margin-left: 10vw;
+        margin-bottom: 2vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-right: 7vw;
+        padding-left: 7vw;
+        background-color: rgba(48, 48, 48, 1);
+        color: white;
+        font-size: 2.5vw;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+        border: none;
+    }
+    
+    .filterclass {
+        background-color: white;
+        border: white;
+        font-size: 3vw;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+        padding-right: 1vw;
+        outline: none;
+    }
+    
+    .filterclass:hover {
+        text-decoration: underline;
+    }
+    
+    #myDIV {
+        display: none;
+    }
+    
+    #myDIV h3 {
+        padding-right: 1vw;
+        padding-left: 2vw;
+        display: inline;
+        font-size: 3vw;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+    }
+    
+    #Buttons {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .designer{
+        display: grid;
+        grid-template-areas: 
+        'one' 
+        'six'
+        'eleven' 
+        'sixteen'
+        'two' 
+        'seven'
+        'twelve' 
+        'seventeen'
+        'three' 
+        'eight'
+        'thirdteen' 
+        'eighteen'
+        'four' 
+        'nine'
+        'fourteen' 
+        'nineteen'
+        'five' 
+        'ten'
+        'fifteen' 
+        'twenty';
+    }
+
+    .designfield{
+        display: grid;
+        grid-template-areas: 
+        'four'
+        'fourteen'
+        'nineteen'
+        'one'
+        'three'
+        'eight'
+        'nine'
+        'thirdteen'
+        'eighteen'
+        'five'
+        'seven'
+        'two'
+        'six'
+        'eleven'
+        'twelve'
+        'sixteen'
+        'seventeen'
+        'ten'
+        'fifteen'
+        'twenty'        
+    }
+
+}
+
+@media only screen and (max-width: 580px){
+    #myDIV {
+        margin-top: -1vw;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    #myDIV {
+        margin-top: -2vw;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #myDIV {
+        margin-top: -2.5vw;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    #myDIV {
+        margin-top: -4vw;
+    }
+}
+
+
 
 /* About Page */
 
@@ -500,7 +994,6 @@ a {
 
 #containerAboutUs {
     display: block;
-    margin-top: 4vw;
 }
 
 #containerAboutUs hr {
@@ -519,12 +1012,11 @@ a {
 
 #aboutUsCaption img {
     width: 60vw;
-    height: 30vw;
 }
 
 #aboutUsCaption h3 {
     margin-top: 1vw;
-    margin-bottom: 0.5vw;
+    margin-bottom: 1vw;
     font-size: 1.5vw;
     font-weight: normal;
 }
@@ -544,7 +1036,7 @@ a {
         "img p";
     margin-top: 6vw;
     margin-left: 20vw;
-    margin-right: 15vw;
+    margin-right: 10vw;
     font-family: Jost;
     font-style: normal;
     font-weight: normal;
@@ -579,6 +1071,160 @@ a {
     font-weight: normal;
 }
 
+@media only screen and (max-width: 1200px){
+    #aboutUsCaption img {
+        width: 56vw;
+    }
+}
+
+@media only screen and (max-width: 1170px){
+    .profile {
+        margin-right: 5vw;
+        margin-left: 15vw;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    #aboutUsCaption img {
+        width: 53vw;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    #aboutUsCaption img {
+        width: 100vw;
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+
+    #aboutUsCaption{
+        margin-left: 0vw;
+    }
+
+    #aboutUsCaption h3 {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        font-size: 2.5vw;
+        font-weight: normal;
+    }
+    
+    #aboutUsCaption p {
+        text-align: justify;
+        font-size: 1.8vw;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+    .profile {
+        margin-top: 8vw;
+        margin-left: 20vw;
+        margin-right: 10vw;
+    }
+    
+    .profile img {
+        width: 30vw;
+    }
+    
+    .profile div {
+        margin-left: 5vw;
+    }
+    
+    .profile h1 {
+        margin-top: 5vw;
+        margin-bottom: 0vw;
+        font-size: 5vw;
+        font-weight: normal;
+    }
+    
+    .profile h3 {
+        margin-top: 0vw;
+        margin-bottom: 0.5vw;
+        font-size: 3vw;
+        font-weight: normal;
+    }
+    
+    .profile p {
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        font-size: 2vw;
+        font-weight: normal;
+    }
+
+}
+
+    @media only screen and (max-width: 550px){
+        #aboutUsCaption h3 {
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+            font-size: 2.8vw;
+        }
+        
+        #aboutUsCaption p {
+            font-size: 2.2vw;
+            margin-left: 8vw;
+            margin-right: 8vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    @media only screen and (max-width: 450px){
+        #aboutUsCaption img {
+            width: 120vw;
+            margin-left: -10vw;
+            margin-right: 0vw;
+        }
+        
+        #aboutUsCaption h3 {
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+            font-size: 3.5vw;
+        }
+        
+        #aboutUsCaption p {
+            font-size: 3vw;
+            margin-left: 8vw;
+            margin-right: 8vw;
+            margin-bottom: 3vw;
+        }
+    }
+
+    @media only screen and (max-width: 400px){
+        .profile {
+            margin-top: 8vw;
+            margin-left: 5vw;
+            margin-right: 10vw;
+        }
+
+        .profile img {
+            width: 40vw;
+        }
+        
+        .profile div {
+            margin-left: 5vw;
+        }
+        
+        .profile h1 {
+            margin-top: 5vw;
+            margin-bottom: 0vw;
+            font-size: 7vw;
+            font-weight: normal;
+        }
+        
+        .profile h3 {
+            margin-top: 0vw;
+            margin-bottom: 0.5vw;
+            font-size: 4vw;
+            font-weight: normal;
+        }
+        
+        .profile p {
+            margin-top: 0.5vw;
+            margin-bottom: 0.5vw;
+            font-size: 3vw;
+            font-weight: normal;
+        }
+    }
+
+
 /* Grid Names */
 
 .profile img {
@@ -599,16 +1245,13 @@ a {
 
 /* Specific Work Pages */
 
-#container2 {
-    margin-top: 6vw;
-}
+
 
 .specificWork {
     font-family: Jost;
     font-style: normal;
     font-weight: normal;
     color: black;
-    margin-left: vw;
     margin-bottom: 3vw;
     text-align: center;
 }
@@ -616,18 +1259,15 @@ a {
 .specificWork img {
     width: 35vw;
 }
-.specificWork h1 {
-    font-size: 1vw;
-    font-weight: thin;
-    font-style: normal;
-}
+
 
 .specificWork p {
     font-size: 1.5vw;
     text-align: center;
-    margin-top: 1.3vw;
+    margin-top: 0.5vw;
     margin-right: 5vw;
     margin-left: 5vw;
+    color: black;
 }
 
 .specificWork #description {
@@ -641,8 +1281,13 @@ a {
     color: black;
 }
 
+.workProfile:hover{
+    text-decoration: underline;
+}
+
 .workProfile img {
     width: 10vw;
+    margin-top: 1vw;
 }
 
 #title {
@@ -655,10 +1300,137 @@ a {
     margin: 0vw;
 }
 
-.specificWork .description {
-    text-align: center;
-    margin-top: 0.3vw;
-    margin-right: 12vw;
-    margin-left: 12vw;
-    font-size: 1vw;
+
+@media only screen and (max-width: 991px){
+    #container2 {
+        margin-top: 0vw;
+    }
+
+    .specificWork img {
+        margin-top: 2vw;
+        width: 60vw;
+    }
+
+    .specificWork h1 {
+        font-size: 2.5vw;
+    }
+    
+    .specificWork p {
+        font-size: 3vw;
+    }
+    
+    .specificWork #description {
+        text-align: left;
+        margin-right: 12vw;
+        margin-left: 15vw;
+        margin-bottom: 8vw;
+        font-size: 2vw;
+    }
+    
+    .workProfile{
+        margin-right: 35vw;
+        margin-left: 35vw;
+    }
+
+    .workProfile img {
+        width: 20vw;
+    }
+
+    #title {
+        font-size: 3.2vw;
+    }
+    
+    #profession {
+        font-size: 3vw;
+    }
+    
 }
+
+
+.youSlides {
+    width: 35vw;
+    height: 35vw;
+    margin: 0vw;
+    margin-left: 16vw;
+    margin-bottom: 2vw;
+}
+
+
+@media only screen and (max-width: 1400px){
+    .youSlides {
+        margin-left: 13vw;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .youSlides {
+        margin-left: 11vw;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .youSlides {
+        margin-left: 9vw;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .youSlides {
+        margin-left: 8vw;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .youSlides {
+        width: 60vw;
+        margin-left: 20vw;
+    }
+
+    .specificWork h1 {
+        font-size: 2.5vw;
+    }
+    
+    .specificWork p {
+        font-size: 3vw;
+    }
+    
+    .specificWork #description {
+        text-align: left;
+        margin-right: 12vw;
+        margin-left: 15vw;
+        margin-bottom: 8vw;
+        font-size: 2vw;
+    }
+    
+    .workProfile{
+        margin-right: 35vw;
+        margin-left: 35vw;
+    }
+
+    .workProfile img {
+        width: 20vw;
+    }
+
+    #title {
+        font-size: 3.2vw;
+    }
+    
+    #profession {
+        font-size: 3vw;
+    }
+
+    #slide{
+        margin-top: 0vw;
+    }
+
+    #spacer{
+        margin-top: 30vw;
+    }
+
+}
+
+
+  
+
+  
+ 
