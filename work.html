@@ -9,6 +9,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         />
+        <script src="javascript.js"></script>
     </head>
 
     <!-- Nav Bar -->
@@ -39,17 +40,18 @@
         <!-- Content -->
         <div class="content">
             <div id="container">
+
                 <div id="Buttons">
                     <button class="filter" onclick="filterClick()">
-                        FILTER
+                    FILTER
                     </button>
                     <div id="myDIV">
                         <h3>sort by:</h3>
-                        <button class="filterclass">designer</button>
-                        <button class="filterclass">design field</button>
+                        <button class="filterclass" onclick="designer()">designer</button>
+                        <button class="filterclass" onclick="designfield()">design field</button>
                     </div>
                 </div>
-                <div id="work">
+                <div id="workOrder" class="work">
                     <div class="workimages" id="one">
                         <a href="Lucy1.html">
                             <div class="overlay">
@@ -251,3 +253,4 @@
         </script>
     </body>
 </html>
+
