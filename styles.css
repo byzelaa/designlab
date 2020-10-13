@@ -1434,25 +1434,17 @@ a {
 
 /* Contact Page*/
 
-/* Import Font */
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
-@import url("https://use.typekit.net/zcs7ceo.css");
-
 /* Titles, Headings, Paragraphs Settings */
 h4 {
     font-family:'Jost', sans-serif;
     font-weight: 400;
     font-size: 26px;
-    font-style: normal;
-    text-align: left;
 }
 
 h5 {
     font-family: 'IvyPresto-Display', serif;
-    font-style: normal;
     font-weight: normal;
-    font-size: 64px;
-    text-align: center;
+    font-size: 54px;
     color: white;
     line-height: 70px;
 }
@@ -1482,7 +1474,6 @@ h5 {
     right: 0;
     bottom: 0;
     left: 0;
-    text-align: left;
     transition: opacity .25s ease;
     z-index: 2;
   }
@@ -1517,16 +1508,7 @@ h5 {
     margin: auto;
     background: rgba(116, 141, 101, 0.9);
     text-align: center;
-    padding: 13em 10em;
-  }
-  
-  @media screen and (max-width: 768px) {
-      
-    .modal__inner {
-      width: 90%;
-      height: 90%;
-      box-sizing: border-box;
-    }
+    padding-top: 300px;
   }
   
   
@@ -1534,7 +1516,6 @@ h5 {
   body {
     padding: 1%;
     font-family:'Jost', sans-serif;
-    font-size: 10px;
   }
   
   .btn {
@@ -1544,8 +1525,7 @@ h5 {
     color: #fff;
     border-radius: 3px;
     transition: all 0.3s;
-    font-size: 20px;
-    margin: 40%;
+    font-size: 18px;
   }
   
   .btn:hover,
@@ -1569,9 +1549,8 @@ h5 {
 .boxhub-form {
   box-shadow: 0 0 20px #fafafa;
   color: #000000;
-  margin: 8% auto;
-  padding: 60px 100px;
-  line-height: 2;
+  padding: 30px;
+  line-height: 2.5;
   text-align: left;
   font-size: 26px;;
   font-family:'Jost', sans-serif;
@@ -1586,7 +1565,6 @@ h5 {
   border: 0;
   border-bottom: 1px solid #ccc;
   color: #000000;
-  width: 320px;
   font-size: 25px;
   font-family:'Jost', sans-serif;
 }
@@ -1618,11 +1596,9 @@ h5 {
   border-radius: 8px;
   border: none;
   color: white;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: block;
-  margin: 20px auto;
   -webkit-transition-duration: .5s;
   transition-duration: .5s;
 }
@@ -1630,11 +1606,3 @@ h5 {
 .boxhub-form__submit:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 } 
-
-.vl {
-    border-left: 4px solid green;
-    height: 340px;
-    position: relative;
-    float: left;
-    margin-right: 50px;
-  }
